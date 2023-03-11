@@ -6,6 +6,7 @@ from parameterized import parameterized
 
 from utils import access_nested_map, get_json, memoize
 
+
 class TestAccessNestedMap(unittest.TestCase):
     """ Class test nested map """
     @parameterized.expand([
@@ -47,11 +48,13 @@ class TestGetJson(unittest.TestCase):
 
 class TestMemoize(unittest.TestCase):
     """ test with memoize """
+
     def test_memoize(self):
         """ Ttest assert_called_once
         """
         class TestClass:
             """ class """
+
             def a_method(self):
                 """ method  """
                 return 42
